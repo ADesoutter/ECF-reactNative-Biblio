@@ -14,7 +14,7 @@ export default function App() {
         <Stack.Navigator initialRouteName="HomeBooks">
           <Stack.Screen name="HomeBooks" component={SplashScreen} options={{headerShown: false}} />
           <Stack.Screen name="Library" component={LibraryScreen} />
-          <Stack.Screen name="Book" component={BookScreen} />
+          <Stack.Screen name="Details" component={BookScreen} />
         </Stack.Navigator>
     </NavigationContainer>
   );

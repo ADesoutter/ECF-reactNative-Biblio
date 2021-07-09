@@ -33,5 +33,8 @@ const styles = StyleSheet.create({
     },
     button: {
       backgroundColor: '#D3D3D3',
-    }
+    },
+    title: {
+      fontSize: 30,
+    },
   });

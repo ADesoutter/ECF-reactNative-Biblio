@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         marginTop: 30
     },
-        author: {
+    author: {
         marginBottom: 30,
         textAlign: 'right',
         marginRight: 20,
@@ -58,6 +58,6 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: 250,
-        resizeMode: contain
+        resizeMode: 'contain'
     }
 })

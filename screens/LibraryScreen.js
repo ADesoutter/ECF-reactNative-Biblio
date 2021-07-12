@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, FlatList } from 'react-native';
 import axios from 'axios';
 import { ScrollView } from 'react-native-gesture-handler';

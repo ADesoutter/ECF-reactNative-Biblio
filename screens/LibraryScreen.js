@@ -23,12 +23,13 @@ export default function LibraryScreen({navigation}) {
 
       return (
         <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.title}>Book Search App</Text>  
-            {/* <Text>{BookJSX}{AuthorJSX}{DescriptionJSX}</Text> */}
+
+          <View style={styles.container}>
+            <Text style={styles.title}>Book Search App</Text>  
             <TextInput style={styles.input} onChangeText={e => {setSearchBook(e)}} value={searchBook} />
             <Button onPress={updateSearch} title="Rechercher" />
-        </View>
+          </View>
+
         <FlatList
       // données des utilisateurs
         data={arrayBooks}
@@ -42,8 +43,8 @@ export default function LibraryScreen({navigation}) {
           </ListItem.Content>
           </ListItem>)
         }
-        keyExtractor={item => item.id.toString()}
-      />
+        keyExtractor={item => item.id.toString()}/>
+        
         </ScrollView>
       );
     }

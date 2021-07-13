@@ -12,8 +12,6 @@ export default function LibraryScreen({navigation}) {
     const [arrayBooks, setArrayBooks] = useState([]);
   // Création des recherches 
     const [searchBook, setSearchBook] = useState("");
-  // Ajouter à une liste
-    const [addList, setAddList] = useState ([]);
 
       const updateSearch = () => {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchBook}&key=AIzaSyCZ7OqUB8WRUCtBRKabER6fptWDNtL6jVs`)

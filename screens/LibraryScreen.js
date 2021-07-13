@@ -12,6 +12,8 @@ export default function LibraryScreen({navigation}) {
     const [arrayBooks, setArrayBooks] = useState([]);
   // Création des recherches 
     const [searchBook, setSearchBook] = useState("");
+  // Ajouter à une liste
+    const [addList, setAddList] = useState ([]);
 
       const updateSearch = () => {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchBook}&key=AIzaSyCZ7OqUB8WRUCtBRKabER6fptWDNtL6jVs`)
@@ -19,7 +21,6 @@ export default function LibraryScreen({navigation}) {
           setArrayBooks(res.data.items);
         })
       }
-
 
       return (
         <ScrollView>
@@ -37,9 +38,7 @@ export default function LibraryScreen({navigation}) {
         renderItem={({item})=> (
           <ListItem bottomDivider onPress={() => navigation.navigate('Details',item)} >
           <ListItem.Content>
-            <ListItem.Title>{item.volumeInfo.title}</ListItem.Title>
-            <ListItem.Title>{item.volumeInfo.Authors}</ListItem.Title>
-            <ListItem.Subtitle>{item.volumeInfo.Description}</ListItem.Subtitle>
+          <ListItem.Title>{item.volumeInfo.title}</ListItem.Title>
           </ListItem.Content>
           </ListItem>)
         }

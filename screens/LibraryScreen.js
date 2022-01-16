@@ -4,7 +4,7 @@ import axios from 'axios';
 import { ScrollView } from 'react-native-gesture-handler';
 import { ListItem } from 'react-native-elements'
 // clé API : AIzaSyCZ7OqUB8WRUCtBRKabER6fptWDNtL6jVs
-// lienURL : https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=AIzaSyCZ7OqUB8WRUCtBRKabER6fptWDNtL6jVs
+// lienURL : https://www.googleapis.com/books/v1/volumes?q=${searchBook}&key=AIzaSyCZ7OqUB8WRUCtBRKabER6fptWDNtL6jVs
 
 export default function LibraryScreen({navigation}) {
     
